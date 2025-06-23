@@ -1,54 +1,32 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Desafio: Rotas React**
 
-Currently, two official plugins are available:
+O desafio é um projeto ReactJS conforme design Figma abaixo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<https://www.figma.com/file/5cPiXC5sBQc4B4wIZKlI3i/Desafio-Rotas-React>
 
-## Expanding the ESLint configuration
+O projeto deve ser criado usando o Vite.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Critérios de correção
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Todos critérios a seguir devem ser contemplados:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Três links da barra de navegação superior funcionando (Início, Produtos, Sobre nós).
+2. Rota ativa da barra superior destacada na barra superior.
+3. Link "home" (casinha no canto superior direito) funcionando.
+4. Três links da barra de navegação de produtos funcionando (Computadores, Eletrônicos, Livros).
+5. Rota ativa da barra de navegação de produtos destacada.
+6. Página "Não encontrado" deve aparecer para qualquer rota não configurada.
+7. As rotas, bem como as pastas dos componentes, devem seguir a seguinte hierarquia:
+    - "/"
+       - "home"
+       - "products/"
+         - "computers"
+         - "electronics"
+         - "books"
+       - "about"  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+&nbsp;
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+![React e React router ](./public/REACT-ROUTER.jpg)
