@@ -1,10 +1,10 @@
-function Products() 
+function Eletronics() 
 {
     return (
         <>
-            <h1>Teste</h1>
+            <h1>Eletronics</h1>
         </>
     );
 }
 
-export default Products; 
+export default Eletronics; 
