@@ -1,0 +1,16 @@
+.product {
+    margin: 20px 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 100px;
+}
+
+.adjustContainer {
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color: var(--color-bg-secondary);
+}
+
+.adjustLink {
+    color: var(--color-text-secondary);
+}

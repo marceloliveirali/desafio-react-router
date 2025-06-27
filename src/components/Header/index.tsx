@@ -11,7 +11,7 @@ function Header()
                     <nav>
                         <ul>
                             <li><NavLink className="link" to="/">Início</NavLink></li>
-                            <li><NavLink className="link" to="/product">Produtos</NavLink></li>
+                            <li><NavLink className="link" to="/products">Produtos</NavLink></li>
                             <li><NavLink className="link" to="/about">Sobre nós</NavLink></li>
                         </ul>
                     </nav>

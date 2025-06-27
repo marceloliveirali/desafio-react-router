@@ -1,10 +1,14 @@
-function Eletronics() 
+import { Outlet } from "react-router-dom";
+import ConteudoSite from "../../../components/ConteudoSite";
+
+function Products() 
 {
     return (
         <>
-            <h1>Eletronics</h1>
+            <ConteudoSite />
+            <Outlet />
         </>
     );
 }
 
-export default Eletronics; 
+export default Products; 

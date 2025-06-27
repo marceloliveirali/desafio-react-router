@@ -2,7 +2,7 @@ function HomeBody()
 {
     return (
         <>
-            <h1>Teste2</h1>
+            <h1>Bem-vindos!</h1>
         </>
     );
 }
