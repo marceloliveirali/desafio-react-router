@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles.css';
 
 function ConteudoSite() 
@@ -6,13 +6,13 @@ function ConteudoSite()
     return (
         <>
             <div className='product'>
-                <div className='container adjustContainer'>
+                <nav className='container adjustContainer'>
                     <ul>
-                        <li><Link className='link adjustLink' to="/products/computers">Computadores</Link></li>
-                        <li><Link className='link adjustLink' to="/products/eletronics">Eletrônicos</Link></li>
-                        <li><Link className='link adjustLink' to="/products/books">Livro</Link></li>
+                        <li><NavLink className={({isActive}) => isActive ? "sub_menu-item sub_menu-active" : "sub_menu-item"} to="/products/computers">Computadores</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "sub_menu-item sub_menu-active" : "sub_menu-item"} to="/products/eletronics">Eletrônicos</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "sub_menu-item sub_menu-active" : "sub_menu-item"} to="/products/books">Livro</NavLink></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </>
     );

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import './styles.css';
+import { Link } from "react-router-dom";
 
 function Header() 
 {
@@ -10,13 +11,13 @@ function Header()
                 <div className="container">
                     <nav>
                         <ul>
-                            <li><NavLink className="link" to="/">Início</NavLink></li>
-                            <li><NavLink className="link" to="/products">Produtos</NavLink></li>
-                            <li><NavLink className="link" to="/about">Sobre nós</NavLink></li>
+                            <li><NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"} to="/home">Início</NavLink></li>
+                            <li><NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"} to="/products">Produtos</NavLink></li>
+                            <li><NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"} to="/about">Sobre nós</NavLink></li>
                         </ul>
                     </nav>
                     <div>
-                        <img src="/public/img/house.png" alt="Home" />
+                        <Link to="/"><img src="/public/img/house.png" alt="Home" /></Link>
                     </div>
                 </div>
             </header>

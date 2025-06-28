@@ -11,6 +11,13 @@
     background-color: var(--color-bg-secondary);
 }
 
-.adjustLink {
-    color: var(--color-text-secondary);
+.sub_menu-item {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-text-secudary);
+}
+
+.sub_menu-active {
+    font-weight: 700;
 }

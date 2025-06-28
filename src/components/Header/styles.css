@@ -5,5 +5,17 @@ header {
     padding: 0 100px;
 }
 
+.menu-item {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+.menu-active {
+    font-weight: 700;
+}
+
+
 
 
