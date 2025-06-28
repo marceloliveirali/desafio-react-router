@@ -1,0 +1,12 @@
+.product {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 0 100px;
+}
+
+.topp { 
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}

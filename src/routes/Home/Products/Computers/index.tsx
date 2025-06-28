@@ -1,8 +1,19 @@
+import './styless.css';
+
 function Computers() 
 {
     return (
         <>
-            <h1>Computers</h1>
+            <div className='product'>
+                <div className='container'>
+                    <div>
+                        <p>Computador 1</p>
+                        <p>Computador 2</p>
+                        <p>Computador 3</p>
+                    </div>
+                </div>
+            </div>
+            
         </>
     );
 }

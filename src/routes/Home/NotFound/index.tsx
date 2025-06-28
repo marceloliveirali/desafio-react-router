@@ -1,8 +1,17 @@
+import './styless.css';
+
 function NotFound() 
 {
     return (
         <>
-            <h1>NotFound</h1>
+            <div className='product'>
+                <div className='container topp'>
+                    <div>
+                        <h1>Sobre nós</h1>
+                    </div>
+                </div>
+            </div>
+            
         </>
     );
 }
