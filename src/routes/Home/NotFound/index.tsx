@@ -7,7 +7,7 @@ function NotFound()
             <div className='product'>
                 <div className='container topp'>
                     <div>
-                        <h1>Sobre nós</h1>
+                        <h1>Não encontrado!</h1>
                     </div>
                 </div>
             </div>
